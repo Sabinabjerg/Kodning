@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produkt</title>
+    <link rel="stylesheet" href="https://use.typekit.net/esx3anm.css">
+    <script src="https://kit.fontawesome.com/811841b70e.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style.css">
+    
+</head>
+<body>
+    <!--Header-->
+    <nav>
+        <ul class="sidebar">
+            <li onclick=gemSidebar()><a href="#"><i class="fa-solid fa-xmark"></i></a></li>
+            <li><a href="index.html">Hjem</a></li>
+            <li><a href="#">Nyheder</a></li>
+            <li><a href="kategori.html">Mænd</a></li>
+            <li><a href="#">Dame</a></li>
+        </ul>
+        <ul>
+            <li onclick=visSidebar()><a href="#"><i class="fa-solid fa-bars"></i></a></li>
+            <li class="gemVedMobil"><a href="#">Nyheder</a></li>
+            <li class="gemVedMobil"><a href="kategori.html">Mænd</a></li>
+            <li class="gemVedMobil"><a href="#">Dame</a></li>
+            <li><a href="#"><i class="fa-solid fa-magnifying-glass"></i></a></li>
+            <li><a href="index.html">GreyWolf</a></li>
+            <li><a href="#"><i class="fa-solid fa-heart"></i></a></li>
+            <li><a href="#"><i class="fa-solid fa-basket-shopping" style="color: #f86f1a;"></i></a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <img class="blazer" src="img/okohemp2.JPG" alt="Øko hemp blazer">
+        <h5>Beige Blazer lavet af organisk <br> og økologisk hemp</h5>
+        <h5>$$</h5>
+        <div class="farver">
+            <i class="fa-solid fa-circle" style="color: #ccb575;"></i>
+            <i class="fa-solid fa-circle" style="color: black;"></i>
+            <i class="fa-solid fa-circle" style="color: #e27474;"></i>
+        </div>
+        <div class="str">
+            <h5>S</h5>
+            <h5 class="m">M</h5>
+            <h5>L</h5>
+            <h5>XL</h5>
+        </div>
+        <div class="knap">
+            <h5 class="kurv">Tilføj til kurv</h5>
+        </div>
+        <div class="beskrivelse">
+            <p>Vores økologiske blazer i beige er lavet af organisk hemp, som er dyrket med henblik på bæredygtigt materiale til slow fashion forbrug. Der er fokus på fairtrade og ordentlig løn.
+                Materialerne er producerede i overensstemmelse med miljøstyrrelsens krav for svane mærke.</p>
+        </div>
+        <div class="rela">
+            <h5>Relaterede <br> produkter</h5>
+        </div>
+        <div class="kateImg">
+            <img class="kate-1" src="img/jakke.JPG" alt="Grå jakke af hemp">
+            <img class="kate-2" src="img/brunbomuld.JPG" alt="Brun bomulds skjorte">
+            <img class="kate-3" src="img/organisk.JPG" alt="Organisk blazer">
+            <img class="kate-4" src="img/bomuldjakke.JPG" alt="Øko bomulds jakke">
+        </div>
+        <div>
+            <h5 class="seMere">Se mere</h5>
+        </div>
+    </main>
+
+    <footer>
+        <img class="sociale" src="img/sociale-medier.JPG" alt="sociale-medier">
+        <div class="footer">
+         <ul class="info-1">
+             <h4>Information</h4>
+             <li><a href="#">Handels-<br>betingelser</a></li>
+             <li><a href="#">persondata-<br>politik</a></li>
+         </ul>
+         <ul class="kontakt">
+             <h4>Kontakt</h4>
+             <li>Mail: xxx@gmail.com</li>
+             <li>Tlf: xx xx xx xx</li>
+             <li>Lokation: gade 001</li>
+             <li>CVR: xxx xxxx xx</li>
+         </ul>
+         <ul class="info-2">
+             <h4>Information</h4>
+             <li><a href="#">Miljømærker</a></li>
+             <li><a href="#">Certifikater</a></li>
+             <li><a href="#">Trustpilot</a></li>
+         </ul>
+        </div>
+     </footer>
+
+    <script>
+        function visSidebar(){
+            const sidebar= document.querySelector('.sidebar')
+            sidebar.style.display= 'flex'
+        }
+        function gemSidebar(){
+            const sidebar= document.querySelector('.sidebar')
+            sidebar.style.display= 'none'
+        }
+    </script>
+</body>
+</html>

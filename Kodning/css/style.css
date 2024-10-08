@@ -1,0 +1,299 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    min-height: 100vh;
+}
+
+nav{
+    background-color: #d6eccd;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+}
+nav ul{
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    font-family: sztos-variable-regular, sans-serif;
+}
+nav li{
+    height: 50px;
+}
+nav a{
+    height: 100%;
+    padding: 0 30px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: black;
+}
+nav a:hover{
+    background-color: #e9e4e4;
+}
+nav li:first-child{
+    margin-right: auto;
+}
+.sidebar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 250px;
+    z-index: 999;
+    background-color: rgba(255, 255, 255, 0.212);
+    backdrop-filter: blur(10px);
+    box-shadow: -10px 0 10px rgba(0, 0, 0, 1);
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+.sidebar li{
+    width: 100%;
+}
+
+/*øverste billede*/
+.overst{
+    max-width: 100%;
+    padding: 30px;
+    align-items: center;
+}
+
+/*tekst*/
+h5{
+    text-align: center;
+    font-family: sztos-variable-regular, sans-serif;
+    font-size: larger;
+    padding: 10px;
+}
+.tekstfront{
+    padding-bottom: 30px;
+}
+.tekstkate{
+    padding: 30px;
+}
+
+/*Billeder*/
+.MidterImg{
+    max-width: 100%;
+    padding-left: 50px;
+    padding-right: 50px;
+    display: grid;
+    grid-template-rows: 164px 164px 164px 164px 164px 164px 164px;
+    grid-template-columns: 187px 187px;
+}
+.billede-1{
+    grid-row-start: 1;
+    grid-row-end: 4;
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+.billede-2{
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+.billede-3{
+    grid-row-start: 4;
+    grid-row-end: 7;
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+.billede-4{
+    grid-row-start: 2;
+    grid-row-end: 5;
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+.billede-5{
+    grid-row-start: 5;
+    grid-row-end: 8;
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+.billede-6{
+    grid-row-start: 7;
+    grid-row-end: 8;
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+
+/*Nederste billede*/
+.UnderImg{
+    max-width: 100%;
+    padding-left: 33px;
+}
+
+/*footer*/
+.sociale{
+    max-width: 100%;
+    padding-top: 30px;
+}
+.footer{
+    background-color: #d6eccd;
+    padding: 30px;
+    display: flex;
+    width: 100%;
+}
+.footer h4{
+    margin-bottom: 10px;
+
+}
+.info-1{
+    list-style: none;
+    width: 30%;
+    padding: 0 15px;
+}
+.kontakt{
+    list-style: none;
+    align-items: center;
+    width: 100%;
+    padding: 0 15px;
+}
+.info-2{
+    list-style: none;
+    width: 30%;
+    padding: 0 15px;
+}
+
+/*kategoriside billeder*/
+.prodImg{
+    padding-left: 10px;
+    padding-right: 10px;
+    display: grid;
+    grid-template-rows: 380px 20px 380px 20px 380px;
+    grid-template-columns: 222px 20px 222px;
+}
+.prod-1{
+    max-width: 100%;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+.prod-2{
+    max-width: 100%;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 3;
+    grid-column-end: 4;
+}
+.prod-3{
+    max-width: 100%;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+.prod-4{
+    max-width: 100%;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    grid-column-start: 3;
+    grid-column-end: 4;
+}
+.prod-5{
+    max-width: 100%;
+    grid-row-start: 5;
+    grid-row-end: 6;
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+.prod-6{
+    max-width: 100%;
+    grid-row-start: 5;
+    grid-row-end: 6;
+    grid-column-start: 3;
+    grid-column-end: 4;
+}
+.skift{
+    width: 100%;
+    list-style: none;
+    display: flex;
+    padding-top: 20px;
+    padding-left: 210px;
+    align-items: center;
+}
+.to{
+    color: #f86f1a;
+}
+
+/*produktside*/
+.blazer{
+    max-width: 100%;
+    padding: 30px;
+    align-items: center; 
+}
+.farver{
+    text-align: center;
+}
+p{
+    font-family: nicholas, sans-serif;
+    font-size: larger;
+    padding: 30px;
+}
+.str{
+    display: flex;
+    align-items: center;
+    padding-left: 170px;
+}
+.m:hover{
+    color: #f86f1a;
+}
+.kurv{
+    color: #f86f1a;
+    font-size: x-large;
+    text-shadow: black;
+}
+
+/*produktbilleder*/
+.kateImg{
+    padding-left: 10px;
+    padding-right: 10px;
+    display: grid;
+    grid-template-rows: 380px 20px 380px;
+    grid-template-columns: 222px 20px 222px;
+}
+.kate-1{
+    max-width: 100%;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+.kate-2{
+    max-width: 100%;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 3;
+    grid-column-end: 4;
+}
+.kate-3{
+    max-width: 100%;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+.kate-4{
+    max-width: 100%;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    grid-column-start: 3;
+    grid-column-end: 4;
+}
+.seMere{
+    color: #f86f1a;
+}
+
+
+@media(max-width: 800px){
+    .gemVedMobil{
+        display:none;
+    }
+}

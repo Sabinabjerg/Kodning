@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forside</title>
+    <link rel="stylesheet" href="https://use.typekit.net/esx3anm.css">
+    <script src="https://kit.fontawesome.com/811841b70e.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style.css">
+    
+</head>
+<body>
+    <!--Header-->
+    <nav>
+        <ul class="sidebar">
+            <li onclick=gemSidebar()><a href="#"><i class="fa-solid fa-xmark"></i></a></li>
+            <li><a href="#">Hjem</a></li>
+            <li><a href="#">Nyheder</a></li>
+            <li><a href="kategori.html">Mænd</a></li>
+            <li><a href="#">Dame</a></li>
+        </ul>
+        <ul>
+            <li onclick=visSidebar()><a href="#"><i class="fa-solid fa-bars"></i></a></li>
+            <li class="gemVedMobil"><a href="#">Nyheder</a></li>
+            <li class="gemVedMobil"><a href="kategori.html">Mænd</a></li>
+            <li class="gemVedMobil"><a href="#">Dame</a></li>
+            <li><a href="#"><i class="fa-solid fa-magnifying-glass"></i></a></li>
+            <li><a href="#">GreyWolf</a></li>
+            <li><a href="#"><i class="fa-solid fa-heart"></i></a></li>
+            <li><a href="#"><i class="fa-solid fa-basket-shopping" style="color: #f86f1a;"></i></a></li>
+        </ul>
+    </nav>
+    <!--Body-->
+    <main>
+        <img class="overst" src="img/forstebillede.JPG" alt="Dress in Nature">
+        <h5 class="tekstfront">Lad din samvittighed være<br>med til at vælge din stil</h5>
+        <div class="MidterImg">
+            <img class="billede-1" src="img/slowfashion.JPG" alt="Slow fashion med rent sind og høj kvalitet i fokus">
+            <img class="billede-2" src="img/stilful-tekst.JPG" alt="Stilfuld, mindful & klassisk">
+            <img class="billede-3" src="img/hudånde.JPG" alt="Lad din hud ånde">
+            <img class="billede-4" src="img/huskverden.JPG" alt="Husk verden når du vælger hvem du køber fra">
+            <img class="billede-5" src="img/inspiration.JPG" alt="Lad dig inspirere af naturen og bliv en inspiration for andre">
+            <img class="billede-6" src="img/urban-tekst.JPG" alt="Urban med et twist af natur">
+        </div>
+        <img class="UnderImg" src="img/subscribe.JPG" alt="Subscribe to our newsletter">
+    </main>
+    <!--Footer-->
+    <footer>
+       <img class="sociale" src="img/sociale-medier.JPG" alt="sociale-medier">
+       <div class="footer">
+        <ul class="info-1">
+            <h4>Information</h4>
+            <li><a href="#">Handels-<br>betingelser</a></li>
+            <li><a href="#">persondata-<br>politik</a></li>
+        </ul>
+        <ul class="kontakt">
+            <h4>Kontakt</h4>
+            <li>Mail: xxx@gmail.com</li>
+            <li>Tlf: xx xx xx xx</li>
+            <li>Lokation: gade 001</li>
+            <li>CVR: xxx xxxx xx</li>
+        </ul>
+        <ul class="info-2">
+            <h4>Information</h4>
+            <li><a href="#">Miljømærker</a></li>
+            <li><a href="#">Certifikater</a></li>
+            <li><a href="#">Trustpilot</a></li>
+        </ul>
+       </div>
+    </footer>
+
+    <script>
+        function visSidebar(){
+            const sidebar= document.querySelector('.sidebar')
+            sidebar.style.display= 'flex'
+        }
+        function gemSidebar(){
+            const sidebar= document.querySelector('.sidebar')
+            sidebar.style.display= 'none'
+        }
+    </script>
+</body>
+</html>

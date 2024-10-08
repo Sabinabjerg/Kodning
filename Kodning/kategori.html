@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kategori</title>
+    <link rel="stylesheet" href="https://use.typekit.net/esx3anm.css">
+    <script src="https://kit.fontawesome.com/811841b70e.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style.css">
+    
+</head>
+<body>
+    <!--Header-->
+    <nav>
+        <ul class="sidebar">
+            <li onclick=gemSidebar()><a href="#"><i class="fa-solid fa-xmark"></i></a></li>
+            <li><a href="index.html">Hjem</a></li>
+            <li><a href="#">Nyheder</a></li>
+            <li><a href="kategori.html">Mænd</a></li>
+            <li><a href="#">Dame</a></li>
+        </ul>
+        <ul>
+            <li onclick=visSidebar()><a href="#"><i class="fa-solid fa-bars"></i></a></li>
+            <li class="gemVedMobil"><a href="#">Nyheder</a></li>
+            <li class="gemVedMobil"><a href="kategori.html">Mænd</a></li>
+            <li class="gemVedMobil"><a href="#">Dame</a></li>
+            <li><a href="#"><i class="fa-solid fa-magnifying-glass"></i></a></li>
+            <li><a href="index.html">GreyWolf</a></li>
+            <li><a href="#"><i class="fa-solid fa-heart"></i></a></li>
+            <li><a href="#"><i class="fa-solid fa-basket-shopping" style="color: #f86f1a;"></i></a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h5 class="tekstkate">Hos Grey Wolf <br> kan du altid vælge tøj med <br> god samvittighed</h5>
+        <div class="prodImg">
+            <img class="prod-1" src="img/Ternet.JPG" alt="Ternet organisk vest">
+            <img class="prod-2" src="img/laksefarvet.JPG" alt="Laksefarvet jakke">
+            <img class="prod-3" src="img/bomuld.JPG" alt="Bomulds skjorte">
+            <img class="prod-4" src="img/okohemp.JPG" alt="Øko hemp blazer">
+            <img class="prod-5" src="img/okobomuld.JPG" alt="Øko bomulds t-shirt">
+            <img class="prod-6" src="img/jakke.JPG" alt="Grå jakke af hemp">
+        </div>
+        <div class="skift">
+            <i class="fa-solid fa-arrow-left"></i>
+            <h4>1</h4>
+            <h4>-</h4>
+            <h4 class="to">2</h4>
+            <h4>-</h4>
+            <h4>3</h4>
+            <i class="fa-solid fa-arrow-right"></i>
+        </div>
+    </main>
+
+    <footer>
+        <img class="sociale" src="img/sociale-medier.JPG" alt="sociale-medier">
+        <div class="footer">
+         <ul class="info-1">
+             <h4>Information</h4>
+             <li><a href="#">Handels-<br>betingelser</a></li>
+             <li><a href="#">persondata-<br>politik</a></li>
+         </ul>
+         <ul class="kontakt">
+             <h4>Kontakt</h4>
+             <li>Mail: xxx@gmail.com</li>
+             <li>Tlf: xx xx xx xx</li>
+             <li>Lokation: gade 001</li>
+             <li>CVR: xxx xxxx xx</li>
+         </ul>
+         <ul class="info-2">
+             <h4>Information</h4>
+             <li><a href="#">Miljømærker</a></li>
+             <li><a href="#">Certifikater</a></li>
+             <li><a href="#">Trustpilot</a></li>
+         </ul>
+        </div>
+     </footer>
+
+    <script>
+        function visSidebar(){
+            const sidebar= document.querySelector('.sidebar')
+            sidebar.style.display= 'flex'
+        }
+        function gemSidebar(){
+            const sidebar= document.querySelector('.sidebar')
+            sidebar.style.display= 'none'
+        }
+    </script>
+</body>
+</html>
